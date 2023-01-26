@@ -1,10 +1,12 @@
 // Client component
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import Logo from "../public/logo.png";
 
 type NavLinksProps = {
   id: number;
@@ -42,9 +44,9 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white">
-      <div className="container flex items-center justify-between py-5 px-4">
-        <p>JM DE GUIA</p>
+    <header className="fixed inset-x-0 z-50 bg-white">
+      <div className="container flex items-center justify-between py-6 px-4">
+        <Image src={Logo} alt="Logo" />
         <nav className="hidden space-x-8 md:flex">
           {navLinks.map((navLink) => (
             <Link
