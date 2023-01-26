@@ -10,10 +10,12 @@ const page = () => {
     <>
       <main className="min-h-screen bg-[url('./assets/img/hero-bg.svg')] bg-cover bg-no-repeat">
         <section className="container relative flex min-h-screen flex-col justify-center px-4">
-          <h1 className="text-5xl font-black uppercase tracking-wide">Hi, I&apos;m John Martin De Guia</h1>
-          <p className="w-2/3 py-6 text-xl leading-normal">
+          <h1 className="text-3xl font-black uppercase tracking-wide md:text-4xl lg:text-5xl">
+            Hi, I&apos;m John Martin De Guia
+          </h1>
+          <p className="w-full py-6 text-base leading-normal sm:w-3/5 md:w-2/3 md:text-xl">
             A{" "}
-            <span className="text-3xl font-bold text-red-600 hover:underline hover:underline-offset-8">
+            <span className="text-xl font-bold text-red-600 hover:underline hover:underline-offset-8 md:text-3xl">
               Front-End Developer
             </span>{" "}
             designing and building the Front-End of Websites and Web Applications
@@ -29,7 +31,7 @@ const page = () => {
             </a>
           </section>
 
-          <div className="absolute right-0 bg-white p-4 shadow-lg">
+          <div className="absolute right-0 hidden bg-white p-4 shadow-lg md:block">
             <div className="flex flex-col space-y-6">
               <a href={githubLink} className="transition duration-150 hover:text-red-600" target="_blank" rel="noreferrer">
                 <FaGithub size={35} />
