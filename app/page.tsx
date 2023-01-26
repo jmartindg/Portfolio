@@ -1,5 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+// Components
+import About from "@/components/About";
+
 const page = () => {
   const resumeLink: string =
     "https://docs.google.com/document/d/1B9UHW7tlaz0FRBoiRygJ7qcrlPewC59rm96uLCRqLpA/edit?usp=sharing";
@@ -43,6 +46,8 @@ const page = () => {
           </div>
         </section>
       </main>
+
+      <About />
     </>
   );
 };
