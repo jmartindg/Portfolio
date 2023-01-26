@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.projects-txt::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1.5rem);
+  height: 5px;
+  width: 3rem;
+  background: #dc2626;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}

@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 // Components
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 const page = () => {
   const resumeLink: string =
@@ -48,6 +49,7 @@ const page = () => {
       </main>
 
       <About />
+      <Projects />
     </>
   );
 };
