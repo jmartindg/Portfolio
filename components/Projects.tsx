@@ -38,6 +38,10 @@ const Projects = () => {
           id: 2,
           name: "Tailwind CSS",
         },
+        {
+          id: 3,
+          name: "The Movie Database API",
+        },
       ],
       description:
         "Reelspark is a movie and tv shows information website that uses The Movie Database API(TMDB). Browse your favorite movies or tv shows information for free.",
@@ -86,7 +90,7 @@ const Projects = () => {
         },
       ],
       description:
-        "Todo_it is a to-do list web application that allows you to add, update, view, and delete your todo's. It uses Supabase which is an open-source alternative to Firebase that handles this project's database and authentication.",
+        "Todo_it is a to-do list web application that allows you to add, update, view, and delete your todo's. It uses Supabase which is an open-source back-end alternative to Firebase that handles this project's database and authentication.",
     },
     {
       id: 4,
@@ -175,16 +179,19 @@ const Projects = () => {
           <article key={project.id} className="mt-24 grid grid-cols-1 gap-10 lg:grid-cols-2">
             <Image src={project.thumbnail} placeholder="blur" alt={project.name} className="rounded shadow-lg" />
             <section className="flex flex-col justify-center">
-              <header className="mb-8">
+              <header className="mb-8 flex flex-wrap">
                 {project.technologies.map((technology) => (
-                  <span key={technology.id} className="mr-2 rounded bg-red-600 px-2.5 py-0.5 text-sm text-gray-50">
+                  <span
+                    key={technology.id}
+                    className="mr-2 mb-2 rounded bg-red-600 px-2.5 py-0.5 text-sm text-gray-50 md:mb-0"
+                  >
                     {technology.name}
                   </span>
                 ))}
               </header>
               <h3 className="text-2xl font-bold">{project.name}</h3>
               <p className="py-6 text-gray-800">{project.description}</p>
-              <footer className="mt-3 space-x-3">
+              <footer className="mt-3 flex flex-col space-y-3 text-center sm:flex-row sm:space-x-3 sm:space-y-0">
                 <a
                   href={project.demoLink}
                   className="rounded border border-transparent bg-red-600 px-6 py-3 text-white transition duration-150 hover:bg-red-700"
