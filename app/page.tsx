@@ -13,7 +13,7 @@ const page = () => {
 
   return (
     <>
-      <main className="min-h-screen bg-[url('../public/hero-bg.svg')] bg-cover bg-no-repeat">
+      <main id="home" className="min-h-screen bg-[url('../public/hero-bg.svg')] bg-cover bg-no-repeat">
         <section className="container relative flex min-h-screen flex-col justify-center px-4">
           <h1 className="text-3xl font-black uppercase tracking-wide md:text-4xl lg:text-5xl">
             Hi, I&apos;m John Martin De Guia

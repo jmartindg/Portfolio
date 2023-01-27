@@ -172,7 +172,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-white">
+    <section id="projects" className="bg-white">
       <section className="container px-4 py-20">
         <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase">Projects</h2>
         {projects.map((project) => (

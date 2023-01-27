@@ -1,8 +1,6 @@
-// Client component
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
@@ -24,22 +22,22 @@ const Navbar = () => {
     {
       id: 1,
       name: "Home",
-      path: "/",
+      path: "#home",
     },
     {
       id: 2,
       name: "About",
-      path: "/about",
+      path: "#about",
     },
     {
       id: 3,
       name: "Projects",
-      path: "/projects",
+      path: "#projects",
     },
     {
       id: 4,
       name: "Contact",
-      path: "/contact",
+      path: "#contact",
     },
   ];
 
@@ -49,13 +47,13 @@ const Navbar = () => {
         <Image src={Logo} alt="Logo" />
         <nav className="hidden space-x-8 md:flex">
           {navLinks.map((navLink) => (
-            <Link
+            <a
               key={navLink.id}
               href={navLink.path}
               className="text-sm font-bold uppercase transition duration-150 hover:text-red-500"
             >
               {navLink.name}
-            </Link>
+            </a>
           ))}
         </nav>
         <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -67,13 +65,14 @@ const Navbar = () => {
       {isOpen && (
         <nav className="container flex flex-col px-4 pt-4 pb-10">
           {navLinks.map((navLink) => (
-            <Link
+            <a
               key={navLink.id}
               href={navLink.path}
+              onClick={() => setIsOpen(!isOpen)}
               className="rounded py-4 text-sm font-bold uppercase transition duration-150 hover:bg-red-500 hover:pl-4 hover:text-white"
             >
               {navLink.name}
-            </Link>
+            </a>
           ))}
 
           <div className="mt-5 flex items-center space-x-4">

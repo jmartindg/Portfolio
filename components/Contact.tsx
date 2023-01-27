@@ -11,7 +11,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="min-h-screen bg-[url('../public/hero-bg.svg')] bg-cover bg-no-repeat py-20 px-4">
+    <section id="contact" className="min-h-screen bg-[url('../public/hero-bg.svg')] bg-cover bg-no-repeat py-20 px-4">
       <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase">Contact</h2>
 
       <form
