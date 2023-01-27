@@ -4,6 +4,7 @@ import "./globals.css";
 import { Inter } from "@next/font/google";
 
 // Components
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 const inter = Inter({
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-gray-50">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
