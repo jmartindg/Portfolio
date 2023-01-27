@@ -174,9 +174,11 @@ const Projects = () => {
   return (
     <section id="projects" className="bg-white">
       <section className="container px-4 py-20">
-        <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase">Projects</h2>
+        <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase" data-aos="fade-up">
+          Projects
+        </h2>
         {projects.map((project) => (
-          <article key={project.id} className="mt-24 grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <article key={project.id} className="mt-24 grid grid-cols-1 gap-10 lg:grid-cols-2" data-aos="fade-up">
             <Image src={project.thumbnail} placeholder="blur" alt={project.name} className="rounded shadow-lg" />
             <section className="flex flex-col justify-center">
               <header className="mb-8 flex flex-wrap">

@@ -75,7 +75,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="container grid grid-cols-1 gap-5 px-4 py-20 md:grid-cols-2">
+    <section id="about" className="container grid grid-cols-1 gap-5 px-4 py-20 md:grid-cols-2" data-aos="fade-up">
       <section>
         <h2 className="mb-10 border-l-4 border-l-red-600 pl-3 text-2xl font-bold uppercase">About Me</h2>
         <p className="pb-4 pr-12 text-gray-600">

@@ -12,13 +12,16 @@ const Contact = () => {
 
   return (
     <section id="contact" className="min-h-screen bg-[url('../public/hero-bg.svg')] bg-cover bg-no-repeat py-20 px-4">
-      <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase">Contact</h2>
+      <h2 className="projects-txt relative block text-center text-3xl font-bold uppercase" data-aos="fade-up">
+        Contact
+      </h2>
 
       <form
         method="POST"
         action="https://formspree.io/f/mvonzoyp"
         onSubmit={handleSubmit}
         className="container my-20 bg-white p-8 shadow-lg md:w-8/12 lg:w-6/12"
+        data-aos="fade-up"
       >
         <div className="mb-6">
           <label htmlFor="email" className="mb-2 block text-sm font-bold text-gray-900">
