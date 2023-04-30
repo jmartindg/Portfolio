@@ -61,13 +61,8 @@ const Projects = () => {
           id: 2,
           name: "Tailwind CSS",
         },
-        {
-          id: 3,
-          name: "Directus",
-        },
       ],
-      description:
-        "GymZone is a gym website where customers or potential customers can view information about the gym. It also has a blog system that uses Directus Headless CMS.",
+      description: "GymZone is a gym website where customers or potential customers can view information about the gym.",
     },
     {
       id: 3,
