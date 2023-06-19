@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import FiberThumbnail from "../public/Fiber_Thumbnail.jpg";
 import GymZoneThumbnail from "../public/GymZone_Thumbnail.jpg";
 import ReelsparkThumbnail from "../public/Reelspark_Thumbnail.jpg";
 import ShortenItThumbnail from "../public/shortenIt_Thumbnail.jpg";
@@ -136,33 +135,6 @@ const Projects = () => {
       ],
       description:
         "Weatherstat is a weather web application where you can search for current weather data in different cities, and towns around the world.",
-    },
-    {
-      id: 6,
-      name: "Fiber",
-      demoLink: "https://fiberpage.netlify.app/",
-      repoLink: "https://github.com/jmartindg/Fiber-Landing-Page",
-      thumbnail: FiberThumbnail,
-      technologies: [
-        {
-          id: 1,
-          name: "HTML",
-        },
-        {
-          id: 2,
-          name: "SCSS",
-        },
-        {
-          id: 3,
-          name: "JavaScript",
-        },
-        {
-          id: 4,
-          name: "Bootstrap",
-        },
-      ],
-      description:
-        "Fiber is a landing page challenge from Codewell where you will be provided with real-world design templates that you can use to practice your HTML and CSS skills.",
     },
   ];
 
