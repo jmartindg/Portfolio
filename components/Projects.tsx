@@ -113,7 +113,7 @@ const Projects = () => {
     {
       id: 5,
       name: "Weatherstat",
-      demoLink: "https://weatherstat.netlify.app/",
+      demoLink: "https://weatherstat-three.vercel.app/",
       repoLink: "https://github.com/jmartindg/Weatherstat",
       thumbnail: WeatherStatThumbnail,
       technologies: [
