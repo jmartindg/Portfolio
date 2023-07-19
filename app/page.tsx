@@ -12,7 +12,7 @@ import Projects from "@/components/Projects";
 
 const Page = () => {
   const resumeLink: string =
-    "https://docs.google.com/document/d/1B9UHW7tlaz0FRBoiRygJ7qcrlPewC59rm96uLCRqLpA/edit?usp=sharing";
+    "https://docs.google.com/document/d/1Pp7pUS2egw4ArlftX3WockroW6wfERgk/edit?usp=sharing&ouid=112509297318612161516&rtpof=true&sd=true";
   const githubLink: string = "https://github.com/jmartindg";
   const linkedinLink: string = "https://www.linkedin.com/in/john-martin-de-guia-b788b7205/";
 
